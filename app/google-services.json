@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "318949945502",
+    "firebase_url": "https://boram-project-default-rtdb.firebaseio.com",
+    "project_id": "boram-project",
+    "storage_bucket": "boram-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318949945502:android:81852e3129526a9222cb8f",
+        "android_client_info": {
+          "package_name": "com.example.boram_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318949945502-vnaa03m2m771su0e08m4som5831iqk97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATjfP3Hblu8-dJQC0cBS68BJQsblaU38s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318949945502-vnaa03m2m771su0e08m4som5831iqk97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
