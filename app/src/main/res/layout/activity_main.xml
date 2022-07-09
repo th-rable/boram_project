@@ -20,6 +20,7 @@
         android:id="@+id/firetestbt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="firebasetestclick"
         android:text="testbutton"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
