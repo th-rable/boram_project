@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_bg"
+
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -27,7 +27,6 @@
 
                 android:layout_height="wrap_content"
 
-                app:errorTextColor="@color/green_e"
                 app:counterEnabled="true"
                 >
 
