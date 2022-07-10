@@ -6,6 +6,11 @@ buildscript {
         classpath 'com.google.gms:google-services:4.3.13'
 
     }
+
+    repositories {
+        google()
+    }
+
 }
 plugins {
     id 'com.android.application' version '7.1.2' apply false

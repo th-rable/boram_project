@@ -7,4 +7,35 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="green_pri">#486800</color>
+    <color name="green_onpri">#ffffff</color>
+    <color name="green_pc">#c3f26c</color>
+    <color name="green_onpc">#131f00</color>
+
+    <color name="green_s">#596248</color>
+    <color name="green_ons">#ffffff</color>
+    <color name="green_sc">#dde6c6</color>
+    <color name="green_onsc">#171e0a</color>
+
+    <color name="green_t">#396661</color>
+    <color name="green_ont">#ffffff</color>
+    <color name="green_tc">#bcece5</color>
+    <color name="green_ontc">#00201d</color>
+
+    <color name="green_e">#ba1a1a</color>
+    <color name="green_one">#ffffff</color>
+    <color name="green_ec">#ffdad6</color>
+    <color name="green_onec">#410002</color>
+
+    <color name="green_bg">#fefcf4</color>
+    <color name="green_onbg">#1b1c17</color>
+    <color name="green_sf">#fefcf4</color>
+    <color name="green_onsf">#1b1c17</color>
+
+    <color name="green_outline">#75786b</color>
+    <color name="green_sv">#e2e4d4</color>
+    <color name="green_onsv">#45483d</color>
+
+
 </resources>
