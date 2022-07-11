@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LobbyKt"></activity>
+        <activity android:name=".ScKt"></activity>
+        <activity android:name=".FoodKt"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>

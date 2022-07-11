@@ -1,28 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
 
-    >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/showstnum_tx"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="학번 : "
-                android:textSize="34sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorSecondaryContainer"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/logout_bt"
+                        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="12dp"
+                        android:onClick="logout_btclick"
+                        android:text="00000"
+                        app:icon="@drawable/outline_logout_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:rippleColor="@color/md_theme_light_surfaceTint"
+                        app:strokeColor="?attr/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보람고등학교"
+                        android:textColor="?attr/colorSecondaryVariant"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/logout_bt"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/button15"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:backgroundTint="@color/md_theme_light_errorContainer"
+                                app:cornerRadius="10dp"
+                                app:rippleColor="@color/md_theme_light_error"
+                                app:strokeColor="@color/md_theme_light_error" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:orientation="vertical">
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="공지사항"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/button13"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:backgroundTint="?attr/colorSecondaryContainer"
+                                android:onClick="sc_click"
+                                app:cornerRadius="20dp"
+                                app:rippleColor="?attr/colorSecondary" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:orientation="vertical">
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="시간표"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/date_num_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="20220711" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <TextView
+                                    android:id="@+id/today_sc_tx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="30dp"
+                                    android:text="( 시간표 )" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/button14"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:backgroundTint="?attr/colorSecondaryContainer"
+                                android:onClick="food_click"
+                                app:cornerRadius="20dp"
+                                app:rippleColor="?attr/colorSecondary" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:orientation="vertical">
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="급식표"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/date_num_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="20220711" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp" />
+
+                                <TextView
+                                    android:id="@+id/today_food_tx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:paddingLeft="30dp"
+                                    android:text="( 급식표 )" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
+
     </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
     }
     fun firstlogin(view: View){
         var loginbt:Button = findViewById<Button>(R.id.firstlogin_bt)
@@ -58,5 +60,7 @@ class MainActivity : AppCompatActivity() {
             toast = Toast.makeText(this,"실패",Toast.LENGTH_SHORT)
             toast.show()
         }
+
+
     }
 }
